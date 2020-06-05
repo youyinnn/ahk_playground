@@ -21,3 +21,14 @@ return
 
 CapsLock & l::right
 return
+
+
+Tab & w::
+    TempFile := A_Temp . "\info.txt"
+    full_command := " /c " . " cd scripts && node demo.js"
+    FileDelete, %TempFile%
+    RunWait,%ComSpec% %full_command% >> %TempFile%,,Hide
+    FileRead,Output,%TempFile%
+    FileDelete,%TempFile%
+    MsgBox %Output%
+return
