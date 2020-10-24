@@ -8,27 +8,27 @@ Tab::Tab
 return
 
 ; arrow
-Tab & w::up
+Tab & i::up
 return
-Tab & s::down
+Tab & k::down
 return
-Tab & a::left
+Tab & j::left
 return
-Tab & d::right
+Tab & l::right
 return
 
 ; word/row selection
-Tab & i::
+Tab & w::
     Send {ShiftDown}{Up}{ShiftUp}
 return
-Tab & k::
+Tab & s::
     Send {ShiftDown}{Down}{ShiftUp}
 return
-Tab & j::
+Tab & a::
     Send {CtrlDown}{ShiftDown}{Left}{ShiftUp}{CtrlUp}
 return
 
-Tab & l::
+Tab & d::
     Send {CtrlDown}{ShiftDown}{Right}{ShiftUp}{CtrlUp}
 return
 
@@ -46,13 +46,40 @@ return
     Send {right 5}
 return
 
+; mac os key mapping
+!a::
+    Send {CtrlDown}{a}{CtrlUp} ; alt+a -> ctrl+a
+return 
+!c::
+    Send {CtrlDown}{c}{CtrlUp} ; alt+c -> ctrl+c
+return 
+!v::
+    Send {CtrlDown}{v}{CtrlUp}
+return 
+!s::
+    Send {CtrlDown}{s}{CtrlUp}
+return 
+!d::
+    Send {CtrlDown}{d}{CtrlUp}
+return 
+!z::
+    Send {CtrlDown}{z}{CtrlUp}
+return
+!f::
+    Send {CtrlDown}{f}{CtrlUp}
+return
+!x::
+    Send {CtrlDown}{x}{CtrlUp}
+return
+!+z::
+    Send {CtrlDown}{ShiftDown}{z}{ShiftUp}{CtrlUp} ; alt+shift+z -> ctrl+shift+z
+return
+
 ; jump
 Tab & p::Home
 return
-
 Tab & `;::End
 return
-
 Tab & Enter::
     Send {End}{Enter} 
 return

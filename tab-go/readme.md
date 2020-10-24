@@ -17,7 +17,8 @@ Inspired by [Capslock+](https://capslox.com/capslock-plus/)
 |        `q`         | Tab-Go Function: exit the application                        |
 |        `]`         | Tab-Go Function: show where tab-go application locate        |
 
-|        Alt+        | Mapping                                                  |
-| :----------------: | -------------------------------------------------------- |
-| `i`, `k`, `j`, `l` | Arrow Keys **in 5 times**: `up`, `left`, `down`, `right` |
+|                  Alt+                  | Mapping                                                  |
+| :------------------------------------: | -------------------------------------------------------- |
+|           `i`, `k`, `j`, `l`           | Arrow Keys **in 5 times**: `up`, `left`, `down`, `right` |
+| `c`,`v`,`x`,`d`,`s`,`a`,`z`,`shitf+z`, | MacOS HotKey Mapping                                     |
 
