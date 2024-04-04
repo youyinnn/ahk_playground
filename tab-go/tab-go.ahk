@@ -64,7 +64,7 @@ return
 return 
 !z::
     Send {CtrlDown}{z}{CtrlUp}
-return
+return  
 !f::
     Send {CtrlDown}{f}{CtrlUp}
 return
@@ -76,24 +76,27 @@ return
 return
 
 ; jump
-Tab & p::Home
+Tab & u::Home
 return
-Tab & `;::End
+Tab & o::End
 return
 Tab & Enter::
     Send {End}{Enter} 
 return
 
 ; prevent false operations
-Tab & u::
-Tab & o::
+Tab & p::
 Tab & h::
+Tab & `;::
 Tab & '::
 Tab & [::
 return
 
+; others
+Tab & 8::BackSpace
+
 ; ----------------- app functions -----------------
-Tab & q::
+Tab & q::   
     MsgBox, 4, Tab-Go, Exit Tab-Go? 
     IfMsgBox Yes
         ExitApp 0
